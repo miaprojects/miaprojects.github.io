@@ -1,0 +1,255 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Shop</title>
+  <meta charset="utf-8" >
+  <meta name = "viewport" content="width=device-width, initial-scale= 1.0">
+  <link rel="stylesheet" href="css/common_style.css">
+  <link rel="stylesheet" href="css/1_start.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src = "data/catalog.js"></script>
+  <script src = "js/slider.js"></script>
+  <script src = "js/start.js"></script>
+  <script src = "js/common.js"></script>
+  <script src = "js/shopping-bag.js"></script>
+</head>
+
+<body onload = "init()">
+<main>
+<header>
+	<div class = "wrap">
+		<div class = "head">
+			<div class = "head-logo">
+				<a href = "start.html">Template</a>
+				<a href = "start.html">TL</a>
+			</div>
+			<div class = "user-ability-nav">
+				<a href="#">E-mail sign up</a>
+				<a href="shopping-bag.html" class = "head-bag">
+					<img src="img/bag.png" alt="bag">
+					<span id = "bag-info"></span>
+					<!-- <span>Bag(..)</span> -->
+				</a>
+				<a href="#" class = "menu-item" onclick="OpenOrClose()"><img src="img/ico_menu.png" alt="menu"><img src="img/ico_close.png" alt="close"></a>
+			</div>
+		</div>
+		<nav class = "mobile-menu top">
+			<a href="#">Women</a>
+			<a href="#">Men</a>
+			<a href="#">Handbags</a>
+			<a href="#">Accessories</a>
+			<a href="#">Sale</a>
+			<a href="#">New Arrivals</a>
+			<a href="#">Clearance</a>
+			<a href="#">Store Locator</a>
+			<form >
+				<input type = "text" placeholder="Style Name">
+				<button type = "submit"><img src="img/search.png" alt="search"></button>
+			</form>
+		</nav>
+
+		<nav>
+			<a href="#">Women</a>
+			<a href="#">Men</a>
+			<a href="#">Handbags</a>
+			<a href="#">Accessories</a>
+			<a href="#">Sale</a>
+			<a href="#">New Arrivals</a>
+			<a href="#">Clearance</a>
+			<a href="#">Store Locator</a>
+			<form id = "form-f">
+				<input type = "text" placeholder="Style Name">
+				<button type = "submit"><img src="img/search.png" alt="search"></button>
+			</form >
+			<img onclick="openForm()" src="img/search.png" alt="search">
+		</nav>
+		
+	</div>
+
+</header>
+
+
+<section class = "slider">
+	<div class="slider-block">
+		<a href="catalog.html" class="slider-block-slides fade">
+			<img src="img/Images for slider/1.jpg" alt="slide">
+		</a>
+		<a href="item.html" class="slider-block-slides">
+			<img src="img/Images for slider/2.jpg" alt="slide">
+		</a>
+		<a href="catalog.html" class="slider-block-slides">
+			<img src="img/Images for slider/3.jpg" alt="slide">
+		</a>
+
+		<a class = "prev-arrow" onclick="arrowIsClicked(-1)"><img src="img/prev_arrow.png" alt="previous"></a>
+		<a  class = "next-arrow" onclick="arrowIsClicked(1)"><img src="img/next_arrow.png" alt="next"></a>
+	</div>
+	<div class = "dots">
+		<span class="dot active" onclick="dotIsClicked(0)"></span>
+		<span class="dot" onclick="dotIsClicked(1)"></span>
+		<span class="dot" onclick="dotIsClicked(2)"></span>
+	</div>
+</section>
+
+
+<section class="banners">
+	
+	<a href="item.html" class = "banners-item">
+		<img src="img/start/nike_red1.png" alt="NikeRed">
+		<div class="banners-text">	
+			<h2>Nike Red</h2>
+		</div>
+	</a>
+	<a href="catalog.html" class = "banners-item">
+		<img src="img/start/photo.png" alt="Caps & Hats">
+		<div class="banners-text">	
+			<h2>Caps &amp; Hats</h2>
+			<span>Sale -50%</span>
+		</div>
+	</a>
+
+	<a href="catalog.html" class = "banners-item">
+		<img src="img/start/photo_bag.png" alt="Caps & Hats">
+		<div class="banners-text">	
+			<h2>Sale</h2>
+			<span>-70%</span>
+		</div>
+	</a>
+</section>
+
+
+<section class="new-arrivals" id = "new-arrivals">
+	<div class = "wrap">
+		<h1>New arrivals</h1>
+
+			<div class="arrivals-items">
+				<a href="item.html" class = "info">
+					<div class="shadow">
+						<p>View item</p>
+						<div class="badge">New</div>				
+						<img src="img/start/photo_1.png" alt="photo">
+					</div>
+					<div class="items-info itm1">
+						<h4> </h4>
+						<h5>&pound;</h5>
+					</div>
+				</a>
+
+				<a href="item.html" class = "info">
+					<div class="shadow">
+						<p>View item</p>
+						<div class="badge">New</div>				
+						<img src="img/start/photo_2.png" alt="photo">
+					</div>
+					<div class="items-info itm2">
+						<h4></h4>
+						<h5>&pound;</h5>
+					</div>
+				</a>
+
+				<a href="item.html" class = "info">
+					<div class="shadow">
+						<p>View item</p>
+						<img src="img/start/photo_3.png" alt="photo">
+					</div>
+					<div class="items-info itm3">
+						<h4></h4>
+						<h5>&pound;</h5>
+					</div>
+				</a>
+
+				<a href="item.html" class = "info">
+					<div class="shadow">
+						<p>View item</p>
+						<img src="img/start/photo_4.png" alt="photo">
+					</div>
+					<div class ="items-info itm4">
+						<h4></h4>
+						<h5>&pound;</h5>
+					</div>
+				</a>
+		</div>
+	<button class = "btn"><h2>All arrivals</h2></button>
+	</div>
+</section>
+</main>
+
+
+<section class="down">
+	<div class = "wrap">
+
+	<div class="down-left">
+		<div class="down-item">
+			<h4>Quick Links</h4>
+			<ul>
+				<li><a href="#">Store locator</a></li>
+				<li><a href="#">Gift card</a></li>
+				<li><a href="#">Size guide</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="">Support</a></li>
+			</ul>
+		</div>
+		<div class="down-item">
+			<h4>Customer Care</h4>
+			<ul>
+				<li><a href="#">Customer service</a></li>
+				<li><a href="#">Track my order</a></li>
+				<li><a href="#">Return policy</a></li>
+				<li><a href="#">Shipping & delivery</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Careers</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="down-right">
+		<div class="down-item">
+			<h4>Questions</h4>
+			<p>
+				<a href="#"><img src="img/twi_ico.png" alt="twi_icon"></a>Tweet us <span>@template</span>
+			</p>
+			<div class="down-social">
+				<blockquote>We have our own delivery service which <br> operates in 23 major  European cities. Delivery <br>time - 3-5 days.</blockquote>
+				<a href="#"><img src="img/fb.png" alt="facebook"></a>
+				<a href="#"><img src="img/twi.png" alt="twitter	"></a>
+			</div>
+			
+		</div>
+		<div class="down-item">
+			<h4>Order by phone</h4>
+			<p>8-800-409-47-12</p>
+		</div>
+	</div>
+
+	</div>
+</section>
+
+
+<footer>
+	<div class="wrap">
+		
+		<div class="left-part">
+			<h5>&copy; 2010–2015, The Template Group inc.</h5>
+		</div>
+		<div class="mid-part">
+			<a href="#">Share <span>1 437</span></a>
+		</div>
+		<div class="right-part">
+			<a href="#">Legal notice</a>
+			<a href="#">Privacy policy</a>
+			<a href="#">Site map</a>
+			<div class="footer-links ">
+				<a href="#"><img src="img/fb.png " alt="facebook"></a>
+				<a href="#"><img src="img/twi.png " alt="twitter"></a>
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+
+</body>
+</html>
