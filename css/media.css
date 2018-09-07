@@ -1,0 +1,252 @@
+@media(max-width: 950px) {
+
+	.container {
+	    width: 820px;
+	}
+	
+	h3,
+	.title h2 { font-size: 30px;}
+
+	h1 { font-size: 55px; }
+
+	.services__item { width: 240px;}
+	.works { text-align: center;}
+	.works div { 
+		margin-right: 5px; 
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+
+	.team-item  img{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+
+@media(max-width:830px) {
+
+	.container { width: 700px;}	
+
+	.menu li { margin-right: 30px;}
+
+	.service .container {
+		width: 625px;
+	}
+
+	.services__item {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.services__item h3 { margin-top: 16px; }
+	.services__item:nth-child(2) {margin-left: 0;}
+
+	.about-img { 
+		padding-top: 50px; 
+		width: 35%; 
+	}
+	.about-text p { font-size: 14px; }
+
+	.team-item img {
+		width: 180px;
+		height: 180px;
+	}
+
+	.logos .container{ width: 500px;}
+	.logos img { margin-bottom: 20px; }
+
+}
+
+
+
+/*-------   TABLET   -------*/
+@media only screen and (max-width:768px) {
+	
+	.container { width: 660px;}
+	
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		margin-top: 30px;
+		display: none;
+	}
+
+	.menu li  {
+		text-align: center;
+		width: 100%;
+		display: block;
+		margin: 1px 10px;
+		border-bottom: 1px solid grey;
+		background-color: #4651543d;
+		border-radius: 1px;
+	}
+
+	.menu li:hover {
+		background-color: #2f2c2c82;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}	
+	
+	.logo {
+		width: 160px;
+		height: 65px;
+	}
+	h1 { font-size: 45px;}
+
+	.btn { font-size: 16px; }
+
+	.logos .container{ width: 500px;}
+	.logos img { margin-bottom: 20px; }
+
+	.services,
+	.trips,
+	.describe,
+	.team { padding-bottom: 100px; }
+
+	.services__item p {
+		padding: 0 10px;
+	}
+	
+}
+
+
+@media(max-width: 675px) {
+	.container {
+		max-width: 550px;
+	}
+
+	.team-item img {
+		width: 155px;
+		height: 155px;
+	}
+}
+
+
+@media(max-width: 565px) {
+	.container { max-width: 450px;}
+
+	.about-item { 
+		position: relative; 
+		padding-top: 150px;
+	}
+	.about-item:first-child { padding-top: 150px;}
+
+	.about-img img {
+		position: absolute;
+		top: -20px;
+		left: 30%;
+		width: 144px;
+		height: 144px;
+	}
+	.about-text {
+    	width: 100%;
+    	text-align: center;
+	}
+
+	.team-item img {
+		width: 135px;
+		height: 135px;
+	}
+
+	.team-item:last-child p {
+	    margin-bottom: 0;
+	}
+   
+
+	.team-item .social a {
+	    display: inline-block;
+	    width: 25px;
+	    height: 25px;
+	    margin: 0 3px;
+	    border: 3px solid #222;
+	    border-radius: 50%;
+	    background: url(../img/social-sprite.png) no-repeat;
+	}
+
+	.team-item .social a.icon-tw { background-position: -5px -4px;}
+	.team-item .social a.icon-tw:hover {
+	    background-position: -5px -44px;
+	}
+
+	.team-item .social a.icon-fb { background-position: -46px -4px;}
+	.team-item .social a.icon-fb:hover {
+	    background-position: -46px -44px;
+	}
+	.team-item .social a.icon-pn { background-position: -84px -5px;}
+	.team-item .social a.icon-pn:hover {
+	    background-position: -84px -45px;
+	}
+
+	.team-item .social a.icon-gp {background-position: -125px -3px;}
+	.team-item .social a.icon-gp:hover {
+	    background-position: -125px -43px;
+	}
+
+}
+
+
+/*-------   MOBILE   -------*/
+@media(max-width:480px) {
+	.container,
+	.service .container  { width: 360px;}
+
+	.services,
+	.trips,
+	.describe { padding-bottom: 80px; }
+
+	.team { padding-bottom: 55px;}
+	.team-wrap { margin-top: 55px; }
+
+	.logo {
+		width: 160px;
+		height: 64px;
+	}
+
+	h3 { 
+		font-size: 32px;
+		margin-top: 150px;
+	}
+
+	.menu li a {font-size: 14px;}
+	.services__item  { margin-bottom: 40px; }
+
+	.team-item img {
+		width: 105px;
+		height: 105px;
+	}
+	h4 { font-size: 13px; }
+	.team-item .social a { display: none; }
+	
+	#message .left,
+	#message .right {
+	    width: 100%;
+	}
+	
+	footer .social a {
+		width: 30px;
+		height: 30px;
+	}
+
+	.social a.icon-tw.black { background-position: -2px -42px;}
+	.social a.icon-fb.black { background-position: -42px -42px;}
+	.social a.icon-pn.black { background-position: -81px -43px;}
+	.social a.icon-gp.black { background-position: -122px -42px;}
+
+
+	.logos .container{ width: 250px;}
+	.logos img { 
+		width: 125px;
+		height: 26px;
+	}
+}
+
+
+
+
+
