@@ -1,0 +1,132 @@
+html, body  { height: 100%; }
+main {
+	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+}
+
+
+.catalog-back a {
+	font-family: OpenSansBold;
+}
+
+.item-preview-info h2,
+.btn-item {
+	font-family: RobotoBold;
+}
+
+.item-preview-info h3,
+.item-preview-info h5 {
+	font-family: RobotoRegular;
+	font-weight: normal;
+}
+
+.item-preview-info p{
+	font-family: 'Times New Roman', sans-serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+.catalog-back {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
+/*-----   ITEM_BLOCK   -----*/
+
+
+.item-block .wrap {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	margin-bottom: 145px;
+}
+
+.item-pr-top img {
+	width: 590px;
+	height: 394px;
+}
+
+.item-pr-top img:nth-child(n+2) { display: none; }
+
+.item-preview-bottom {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	width: calc(100% / 3);
+	background-color: #000;
+}
+
+.item-pr-small:hover { cursor: pointer; }
+.item-pr-small {height: 130px; }
+
+.item-preview-bottom {
+	background-color: #000;
+	position: relative;
+}
+
+.item-preview .mask-on { background-color: #000;}
+.item-preview .mask-on img{ opacity: 0.5;}
+
+
+
+.item-preview-info {
+	position: relative;
+	margin-left: 50px;
+}
+
+.item-preview-info h2 { margin: 23px 0; }
+.item-preview-info p { line-height: 2; color: #6b6b6b;}
+.item-preview-info h3 {margin: 45px 0}
+
+.item-preview-info h5 {
+	display: inline-block;
+	font-size: 0.75rem;
+	color: #585858;
+	margin-right: 50px;
+}
+
+.btn-item { 
+	width: 80px;
+	height: 40px;
+	background-color: inherit;
+	border: none;
+	margin-right: 30px;
+	font-size: 0.87rem;
+}
+
+.btn-clicked {display: flex;}
+.item-preview-info-sub {
+	display: flex;
+}
+
+
+.clicked { 
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+}
+
+
+.item-preview-info .btn {
+	position: absolute;
+	top: 73%;
+	left: 50%;
+	margin-left: -170px;
+}
+
+.btn-item:hover,
+.btn-item:focus,
+.btn:focus { 
+	cursor: pointer;     
+	outline: 0;
+    outline-offset: 0; 
+}
+
+
+/*-----  END ITEM_BLOCK  -----*/
