@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Catamaran, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #d8dbdb;
+	font-size: 18px;
+	margin:  0 auto;
+	padding: 2%;
+	color: #565859;
+}
+
+.wrapper { background: #f6faff; }
+img { max-width: 100%; }
+header { width: 98%; }
+
+.logo {
+	margin: 2% 0 0 5%;
+	float: left;
+}
+
+.callout {
+	float: right;
+	margin: 3% 3% 2% 0;
+}
+
+.social {
+	float: right;
+	list-style-type: none;
+	margin-top: 8%;
+}
+
+.social li {
+	display: inline;
+}
+
+.social li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+    border: 2px solid #303840;
+    border-radius: 50%;
+    background: url(../img/social-sprite.png) no-repeat;
+}
+
+.social li a.black { background-color: #303840; }
+
+.social li a.icon-tw { background-position: 2px 3px;}
+.social li a.icon-tw:hover {
+    background-position: 2px -38px;
+    border-color: #00aced;
+    background-color: #00aced;
+}
+.social li a.icon-tw.black { background-position: 2px -38px;}
+
+.social li a.icon-fb { background-position: -39px 2px;}
+.social li a.icon-fb:hover {
+    background-position: -38px -38px;
+    border-color: #3b5998;
+    background-color: #3b5998;
+}
+.social li a.icon-fb.black { background-position: -38px -38px;}
+
+.social li a.icon-pn { background-position: -77px 1px;}
+.social li a.icon-pn:hover {
+    background-position: -77px -39px;
+    border-color: #cb2028;
+    background-color: #cb2028;
+}
+.social li a.icon-pn.black { background-position: -77px -39px;}
+
+.social li a.icon-gp {background-position: -118px 3px;}
+.social li a.icon-gp:hover {
+    background-position: -118px -38px;
+    border-color: #d95232;
+    background-color: #d95232;
+}
+.social li a.icon-gp.black { background-position: -118px -38px;}
+
+.banner { margin-bottom: 3%; }
+
+.description { padding: 2%; }
+.description h1 {
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+h1 {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+p {text-align: justify;}
+
+.button {
+	float: right;
+	margin: 1% 2% 4% 0;	
+}
+
+.btn {
+	float: right;
+	background: #303840;
+	color: #f6faff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 12px;
+	border-radius: 8px;
+	letter-spacing: 1px;
+
+}
+
+.btn:hover {
+	background-color: #585858;
+}
+
+.line {
+	clear: both;
+	height: 2px;
+	background-color: #e3e9e9;
+	margin: 4% auto;
+	width: 96%;
+}
+
+.news {
+	float: left;
+	width: 46%;
+	padding: 2%;
+}
+
+a {
+	color: #607cc3;
+	text-decoration: none;
+}
+
+footer p{
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+@media (max-width: 600px) {
+	.news {
+		width: 97%;
+    }
+}
